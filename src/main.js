@@ -4,7 +4,15 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+Vue.mixin({
+  methods: {
+    getImgUrl(pic) {
+        return require("./assets/" + pic); //globalna funkcija potrebna za vise komponenti, dohvaćanje slike iz state-a//
+    }
+  }   
+});
 
 new Vue({
   router,

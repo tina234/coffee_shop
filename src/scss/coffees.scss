@@ -1,0 +1,49 @@
+.coffee-cont {
+    width: 80%;
+    margin: 200px auto;
+    display: flex;
+    position: relative;
+
+
+    .grey-text {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        z-index: 0;
+    }
+
+    .grey-text p {
+        font-size: 160px;
+        background: -webkit-linear-gradient(#808080, #fff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        z-index: 0;
+        letter-spacing: 5px;
+    }
+
+    .coffee-box {
+        flex-basis: 300px;
+        flex-grow: 1;
+        margin: 0 10px;
+        text-align: center;
+        z-index: 1;
+
+        h3 {
+            font-size: 21px;
+            font-weight: bolder;
+        }
+
+        p {
+            color: #808080;
+        }
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+    }
+}

@@ -22,12 +22,6 @@ export default {
     created() {
         this.headers = this.$store.state.headers_modul.headers;
     },
-
-    methods: {
-        getImgUrl(pic) {
-            return require("../assets/" + pic);
-        }
-    }   
 }
 </script>
 

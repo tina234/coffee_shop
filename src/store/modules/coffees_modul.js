@@ -4,22 +4,22 @@ export default {
             {
                 title: "Gran Espresso",
                 description: "Light and flavorful blend with cocoa and black pepper for an intense experience",
-                image:"",
+                image:"cbag4.png",
             },
             {
                 title: "Planalto",
                 description: "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts",
-                image:"",
+                image:"cbag2.png",
             },
             {
                 title: "Piccollo",
                 description: "Mild and smooth blend featuring notes of toasted almond and dried cehrry",
-                image:"",
+                image:"cbag3.png",
             },
             {
                 title: "Danche",
                 description: "Ethiopian hand-harvested blend densely packed with vibrant fruit notes",
-                image:"",
+                image:"cbag4.png",
             },
         ],
     }

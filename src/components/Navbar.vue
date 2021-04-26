@@ -1,6 +1,6 @@
 <template>
     <div class="main-nav">
-        <h4><img src="../assets/coffeebeans.jpg" alt=""> coffeeroasters</h4>
+        <h4><img src="../assets/coffeebeans.png" alt=""> coffeeroasters</h4>
         <div class="nav-menu">
             <router-link v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link> 
         </div>

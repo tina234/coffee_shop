@@ -7,17 +7,17 @@ export default {
                 {
                     title: "Best quality",
                     description: "Discover an endless variety of the wordl's best artisan coffee from each of our roasters",
-                    image:"",
+                    image:"coffee-bean.png",
                 },
                 {
                     title: "Exclusive benefits",
                     description: "Special offers and swag when you subscribe, including 30% off your first shipment",
-                    image:"",
+                    image:"gift.png",
                 },
                 {
                     title: "Free shipping",
                     description: "Discover an endless variety of the wordl's best artisan coffee from each of our roasters",
-                    image:"",
+                    image:"free-delivery.png",
                 }
 
             ],

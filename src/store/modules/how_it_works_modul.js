@@ -18,7 +18,7 @@ export default {
             ],
             button: {
                 title:"Create your plan",
-                link:"",
+                link:"/create_your_plan",
             }
         }
     }

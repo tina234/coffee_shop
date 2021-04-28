@@ -1,0 +1,104 @@
+.hiw-cont {
+    margin: 100px auto;
+    width: 80%;
+
+    >h3 {
+        color: #808080;
+        padding: 35px 20px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .hiw-box {
+       display: flex;
+       position: relative;
+
+       &::before {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: 3px;
+        width: 67%;
+        content: "";
+        background-color: #ffd9b3;
+        }
+
+       .hiw-item {
+            flex-basis: 320px;
+            padding: 20px 20px;
+            margin: 30px 0;
+            margin-right: auto;
+            flex-wrap: wrap;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: -45px;
+                left: 20px;
+                border: 1px solid #009999;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #f9f2ec;
+                content: "";
+            }
+            
+            h1 {
+                font-weight: bold;
+                color: #333333;
+                width: 155px;
+                padding: 15px 0;
+            }
+            
+            p {
+                line-height: 21px;
+                color: #333333;
+                font-size: 17px;
+            }
+
+            span {
+                color:  #ffd9b3;
+                font-size: 80px;
+                font-weight: bold;
+                
+            }
+       }
+    }
+
+    .hiw_button {
+        text-decoration: none;
+        font-family: 'Abril Fatface', cursive;
+        background-color:  #009999;
+        color: #fff;
+        padding: 12px 22px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        display: block;      /* ovo stavljamo da padding il margina od drugog elementa ne prelazi preko njega, problem a elementa*/
+        width: max-content;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ export default {
             {
                 title: "Gran Espresso",
                 description: "Light and flavorful blend with cocoa and black pepper for an intense experience",
-                image:"cbag4.png",
+                image:"cbag5.png",
             },
             {
                 title: "Planalto",
@@ -19,7 +19,7 @@ export default {
             {
                 title: "Danche",
                 description: "Ethiopian hand-harvested blend densely packed with vibrant fruit notes",
-                image:"cbag4.png",
+                image:"cbag5.png",
             },
         ],
     }

@@ -1,7 +1,6 @@
 <template>
     <div class="main-cont">
-        <div class="header-box" v-for="header in headers" :key="header.title">
-            <img :src="getImgUrl(header.image)">
+        <div class="header-box" v-for="header in headers" :key="header.title" :style="{ 'background-image': 'url(' + getImgUrl(header.image) + ')' }">
             <div class="header-text">
                 <h1>{{ header.title }}</h1>
                 <p>{{ header.description }}</p>

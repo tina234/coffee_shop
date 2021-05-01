@@ -7,8 +7,7 @@
                 <router-link class="button" v-if="header.button" :to="header.button.link">{{ header.button.title }}</router-link>
             </div>
         </div>
-    </div>
-    
+    </div>    
 </template>
 
 <script>

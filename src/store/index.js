@@ -6,6 +6,7 @@ import coffees_modul from './modules/coffees_modul';
 import why_us_modul from './modules/why_us_modul';
 import how_it_works_modul from './modules/how_it_works_modul';
 import questions_modul from './modules/questions_modul';
+import headers2_modul from './modules/headers2_modul';
 
 Vue.use(Vuex)
 
@@ -23,5 +24,6 @@ export default new Vuex.Store({
 		why_us_modul,
 		how_it_works_modul,
 		questions_modul,
+		headers2_modul,
 	}
 })

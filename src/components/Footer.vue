@@ -1,7 +1,7 @@
 <template>
     <div class="footer-cont">
         <div class="footer-box">
-            <h4><img src="../assets/coffeebeans.png" alt=""> coffeeroasters</h4>
+            <h4><img src="../assets/coffeebeans34.png" alt=""> coffeeroasters</h4>
             <div class="nav-icons">
                 <div class="footer-nav">
                     <router-link v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link>

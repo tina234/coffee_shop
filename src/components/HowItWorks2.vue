@@ -3,8 +3,8 @@
         <div class="hiw-box">
             <div class="hiw-item" v-for="(argument, index) in how_it_works.arguments" :key="argument.title">
                 <span>0{{ index + 1 }}</span>
-                <h1>{{ argument.title }}</h1>
-                <p>{{ argument.description }}</p>
+                <h1 style="color: #fff;">{{ argument.title }}</h1>
+                <p style="color: #fff;">{{ argument.description }}</p>
             </div>
         </div>
     </div>        

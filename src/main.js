@@ -9,7 +9,7 @@ Vue.config.productionTip = false;
 Vue.mixin({
   methods: {
     getImgUrl(pic) {
-        return require("./assets/" + pic); //globalna funkcija potrebna za vise komponenti, dohvaćanje slike iz state-a//
+        return require("./assets/" + pic); //globalna funkcija potrebna u vise komponenti, dohvaćanje slike iz state-a//
     }
   }   
 });

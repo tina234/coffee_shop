@@ -5,8 +5,10 @@
         <div class="whyus-box">
             <div class="whyus-item" v-for="argument in why_us.arguments" :key="argument.title">
                 <img :src="getImgUrl(argument.image)" alt="">
-                <h3>{{ argument.title }}</h3>
-                <p>{{ argument.description }}</p>
+                <div class="title-descr-box">
+                    <h3>{{ argument.title }}</h3>
+                    <p>{{ argument.description }}</p>
+                </div>
             </div>
         </div>
     </div>    
@@ -26,5 +28,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/whyus.scss";
+
 </style>

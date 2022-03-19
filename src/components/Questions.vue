@@ -8,7 +8,7 @@
         </div>
 
         <div class="quest-box">
-            <div class="main-questions" v-for="question in questions" :key="question.question">
+            <div class="main-questions" v-for="(question,index) in questions" :key="question.question" :data-question_id="index">
                 <div @click="showAnswers($event)">
                     <h2>{{ question.question }}</h2>
                     <span><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
@@ -20,6 +20,10 @@
                     </div>
                 </div>
             </div>
+            <div class="text-box" v-if="questions.length == answers_count">
+                <h4>ORDER SUMMARY</h4>
+                <p v-html="order_summery"></p>
+            </div>  
         </div>
     </div>   
 </template>
@@ -30,6 +34,8 @@ export default {
         return {
             questions: "",
             answers : [],
+            answers_count : 0,
+            order_summery : '',
         }
     },
     created() {
@@ -55,7 +61,7 @@ export default {
         },
 
         chooseAnswer (event) {
-            console.log(event);
+            console.log();
             event.currentTarget.classList.add('active-answer');
             let siblings = event.currentTarget.parentNode.childNodes;
             siblings.forEach(element => {
@@ -65,14 +71,18 @@ export default {
             });
 
             let answer = event.currentTarget.childNodes[0].innerText;
-            let question = event.currentTarget.parentNode.previousSibling.childNodes[0].innerText;
-            this.answers[question] = answer;
+            let question_id = event.currentTarget.parentNode.parentNode.dataset.question_id;
+            this.answers[question_id] = answer;
+            this.answers_count = Object.keys(this.answers).length;
+            
+            if(this.questions.length == this.answers_count){
+                this.order_summery = '"I drink my coffe as <strong>'+ this.answers[0] +'</strong>, whith a <strong>'+ this.answers[1] +'</strong> type of bean. <strong>'+ this.answers[2] +'</strong> ground ala <strong>'+ this.answers[3] +'</strong>, sent to me <strong>'+ this.answers[4] +'</strong>."';
+            }
         }
-
-    }
+    },
 }
 </script>
 
 <style lang="scss">
-  @import "../scss/questions.scss";
+
 </style>

@@ -3,8 +3,10 @@
         <div class="grey-text"><p>our collection</p></div>
         <div class="coffee-box" v-for="coffee in coffees" :key="coffee.title">
             <img :src="getImgUrl(coffee.image)" alt="">
-            <h3>{{ coffee.title }}</h3>
-            <p>{{ coffee.description }}</p>
+            <div class="info-box">
+                <h3>{{ coffee.title }}</h3>
+                <p>{{ coffee.description }}</p>
+            </div>        
         </div>          
     </div>
     
@@ -25,6 +27,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/coffees.scss";
 
 </style>

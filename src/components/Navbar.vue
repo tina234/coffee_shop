@@ -1,8 +1,8 @@
 <template>
     <div class="main-nav">
-        <h4><img src="../assets/coffeebeans34.png" alt="">coffeeroasters</h4>
+        <a href="/"><h4><img src="../assets/coffeebeans34.png" alt="">coffeeroasters</h4></a>
         <div class="nav-menu">
-            <router-link v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link>
+            <router-link class="nav-item" v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link>
         </div>
     </div>
 </template>
@@ -21,5 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../scss/navbar.scss";
+
 </style>

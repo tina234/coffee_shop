@@ -6,10 +6,6 @@ export default {
                 link:"/"
             },
             {
-                title:"About us",
-                link:"/about_us",
-            },
-            {
                 title:"Create your plan",
                 link:"/create_your_plan",
             }

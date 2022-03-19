@@ -797,11 +797,29 @@ body {
                 flex-direction: column;
                 align-items: center;
 
+                h3 {
+                    text-align: center;
+                }
+
                 p {
                     padding: 0;
                     text-align: center;
                 }
             }
         }
+    }
+
+    .hiw-item {
+        span {
+            display: none;
+        }
+    }
+
+    .hiw-item::before {
+        display: none;
+    }
+
+    .hiw-box::before {
+        display: none;
     }
 }

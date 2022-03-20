@@ -312,15 +312,14 @@ body {
 }
 
 .hiw-cont {
-    margin: 100px auto;
     width: 80%;
     box-sizing: border-box;
 
     >h3 {
         color: #808080;
         padding: 35px 20px;
-        font-size: 29px;
         font-weight: bold;
+        font-size: 30px;
     }
 
     .hiw-box {
@@ -389,7 +388,6 @@ body {
         border-radius: 8px;
         display: block;      /* ovo stavljamo da padding il margina od drugog elementa ne prelazi preko njega, problem a elementa*/
         width: max-content;
-        margin-left: 20px;
         cursor: pointer;
         transition: color 0.5s linear;
         position: relative;
@@ -422,7 +420,6 @@ body {
 
 .whyus-cont {
     width: 80%;
-    margin: 100px auto;
     text-align: center;
     position: relative;
 
@@ -461,9 +458,7 @@ body {
 
         .whyus-item {
             background-color: #009999;
-            padding: 60px 10px;
             border-radius: 8px;
-            margin: 0 40px 40px 40px;
 
             h3 {
                 font-weight: bold;
@@ -474,7 +469,6 @@ body {
             }
             
             p {
-                padding: 0 40px;
                 color: #fff;
             }
 
@@ -571,6 +565,7 @@ body {
     }
 
     .whyus-cont {
+        margin: 50px auto;
         padding: 50px 20px;
 
         >h2 {
@@ -581,21 +576,36 @@ body {
             flex-direction: row;
     
             .whyus-item  {
-                width: 330px;
+                max-width: 330px;
+                margin: 0 40px 40px 40px;
+                padding: 60px 10px;
 
-                .title-descr-box p {
-                    font-size: 17px;
+                .title-descr-box {
+                    p {
+                        font-size: 17px;
+                    }
                 }
             }
         }
     }
 
-    .coffee-box h3 {
+    .coffee-box {
+        h3 {
         font-size: 20px;
+        }
+        p {
+            padding: 0 15px;
+            font-size: 20px;
+        }
     }
 
     .hiw-cont {
+        margin: 50px auto 100px auto;
         padding: 60px;
+
+        .hiw_button {
+            margin-left: 20px;
+        }
     }
 
     .quest-cont {
@@ -642,7 +652,7 @@ body {
     }
 
     .whyus-cont {
-        margin: 100px auto 50px auto;
+        margin: 50px auto;
         padding: 50px 20px;
 
         >h2 {
@@ -660,6 +670,7 @@ body {
                 padding: 50px;
                 display: flex;
                 align-items: center;
+                margin: 20px;
 
                 img {
                     margin: 30px;
@@ -681,8 +692,12 @@ body {
     }
 
     .hiw-cont {
-        margin: 100px auto;
+        margin: 50px auto 100px auto;
         padding: 60px 30px;
+
+        .hiw_button {
+            margin-left: 20px;
+        }
     }
 
     .footer-box {
@@ -726,7 +741,12 @@ body {
     }
 
     .whyus-cont {
+        margin: 50px auto;
         padding: 50px 0;
+
+        .whyus-item {
+            padding: 50px;
+        }
 
         > p {
             padding: 0 25px;
@@ -734,11 +754,20 @@ body {
 
         .title-descr-box {
             text-align: initial;
+
+            p {
+
+            }
         }
     }
 
     .hiw-cont {
+        margin: 50px auto 100px auto;
         padding: 60px 0px;
+
+        .hiw_button {
+            margin-left: 20px;
+        }
     }
 
     .quest-cont {
@@ -782,6 +811,8 @@ body {
     }
 
     .whyus-cont {
+        margin: 0 auto;
+
         > h2 {
             font-size: 40px;
             padding: 0 20px;
@@ -791,6 +822,7 @@ body {
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
+            padding: 50px;
 
             .title-descr-box {
                 display: flex;
@@ -802,24 +834,65 @@ body {
                 }
 
                 p {
-                    padding: 0;
                     text-align: center;
                 }
             }
         }
     }
 
-    .hiw-item {
-        span {
+    .hiw-cont {
+        margin: 0 auto;
+        padding: 0 0 60px 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            margin: 0;
+        }
+
+        .hiw-box {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hiw-box::before {
             display: none;
         }
-    }
 
-    .hiw-item::before {
-        display: none;
-    }
+        .hiw-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-    .hiw-box::before {
-        display: none;
+            h1 {
+                padding: 0 15px;
+            }
+
+            p {
+                padding: 0 15px;
+            }
+        }
+
+        .hiw-item::before {
+            display: none;
+        }
+
+        .hiw_button {
+            margin-left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:  350px) {
+    .whyus-cont {
+        .whyus-item {
+            padding: 20px;
+            background-color: #595959;
+
+            p {
+             
+            }
+        }
     }
 }

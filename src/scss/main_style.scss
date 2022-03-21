@@ -24,7 +24,6 @@ body {
 
         h4 {
             font-family: 'Abril Fatface', cursive;
-            font-size: 30px;
             letter-spacing: 1px;
             margin: 0;
             display: flex;
@@ -147,7 +146,7 @@ body {
     }
 
     .grey-text p {
-        font-size: 12vw;
+        font-size: 11vw;
         margin: 0;
         background: -webkit-linear-gradient(#999999, #fff);
         -webkit-background-clip: text;
@@ -255,9 +254,9 @@ body {
 
                 .answer {
                     background-color: #f3e5d8;
-                    width: 200px;
-                    min-height: 230px;
-                    margin: 0 15px;
+                    max-width: 400px;
+                    width: 100%;
+                    margin: 0 15px 20px 15px;
                     padding: 0 20px;
                     border-radius: 8px;
                     box-sizing: border-box;
@@ -301,6 +300,7 @@ body {
 
 .open-answers {
     padding: 30px 0 !important;
+    height: fit-content !important;
 }
 
 .active-answer {
@@ -496,7 +496,6 @@ body {
             h4 {
                 display: flex;
                 font-family: 'Abril Fatface', cursive;
-                font-size: 30px;
                 letter-spacing: 1px;
                 margin: 0;
                 display: flex;
@@ -517,6 +516,7 @@ body {
 
             .icons {
                 padding: 0 30px;
+                white-space: nowrap;
 
                 span {
                     color: #fff;
@@ -543,6 +543,9 @@ body {
                     font-weight: bolder;
                     font-size: 15px;
                 }
+                a:last-child {
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -554,6 +557,12 @@ body {
     .main-cont,
     .main-nav {
         width: 80%;
+    }
+
+    .main-nav {
+        h4 {
+            font-size: 30px;
+        }
     }
 
     .header-text {
@@ -615,6 +624,18 @@ body {
         h2 {
             font-size: 35px;
         }
+
+        .answer-box {
+            .answer {
+                height: 200px;
+            }
+        }
+    }
+
+    .footer-box {
+        h4 {
+            font-size: 30px;
+        }
     }
 }
 
@@ -623,6 +644,12 @@ body {
     .main-cont,
     .main-nav {
         width: 80%;
+    }
+
+    .main-nav {
+        h4 {
+            font-size: 30px;
+        }
     }
 
     .header-text {
@@ -703,6 +730,10 @@ body {
     .footer-box {
         flex-direction: column;
 
+        h4 {
+            font-size: 30px;
+        }
+
         .nav-icons {
             flex-direction: column;
             align-items: center;
@@ -725,6 +756,12 @@ body {
         h2 {
             font-size: 35px;
         }
+
+        .answer-box {
+            .answer {
+                height: 200px;
+            }
+        }
     }
 }
 
@@ -738,6 +775,12 @@ body {
     .coffee-cont,
     .whyus-cont {
         width: 87%;
+    }
+
+    .main-nav {
+        h4 {
+            font-size: 30px;
+        }
     }
 
     .whyus-cont {
@@ -774,7 +817,19 @@ body {
         h2 {
             font-size: 27px;
         }
-    }  
+    }
+
+    .answer-box {
+        .answer {
+            height: 200px;
+        }
+    }
+
+    .footer-box {
+        h4 {
+            font-size: 30px;
+        }
+    }
 }
 
 @media only screen and (max-width:  740px) {
@@ -785,6 +840,12 @@ body {
             display: flex;
             flex-direction: column;
             padding: 50px 20px;
+        }
+    }
+    .main-nav,
+    .footer-box {
+        h4 {
+            font-size: 25px;
         }
     }
 
@@ -822,7 +883,7 @@ body {
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
-            padding: 50px;
+            padding: 20px;
 
             .title-descr-box {
                 display: flex;
@@ -841,7 +902,7 @@ body {
     }
 
     .hiw-cont {
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
         padding: 0 0 60px 0;
         align-items: center;
         display: flex;
@@ -882,17 +943,57 @@ body {
             margin-left: 0;
         }
     }
+
+    .answer-box {
+        .answer {
+            height: 200px;
+        }
+    }
+
+    .footer-box {
+        h4 {
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 620px) {
+    .answer-box {
+        flex-direction: column;
+
+        .answer {
+            height: max-content !important;
+        }
+    }
 }
 
 @media only screen and (max-width:  350px) {
-    .whyus-cont {
-        .whyus-item {
-            padding: 20px;
-            background-color: #595959;
 
-            p {
-             
-            }
+    .main-nav,
+    .footer-box {
+        h4 {
+            font-size: 18px;
         }
+    }
+    .hiw-cont h3 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .whyus-item {
+        p {
+            padding: 0 10px;
+        }
+    }
+
+    .answer-box {
+        .answer {
+            height: max-content !important;
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        line-height: 35px;
     }
 }

@@ -974,9 +974,27 @@ body {
             font-size: 18px;
         }
     }
-    .hiw-cont h3 {
-        padding-bottom: 0;
-        margin-bottom: 0;
+
+    .main-cont {
+        margin-bottom: 50px;
+    }
+
+    .coffee-cont {
+        margin: 100px auto;
+        .coffee-box {
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+
+        }
+    }
+
+    .hiw-cont {
+        margin: 0 auto 0;
+
+        h3 {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
     }
 
     .whyus-item {

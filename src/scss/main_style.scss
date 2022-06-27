@@ -41,7 +41,6 @@ body {
     a {
         text-decoration: none;
         padding: 0 0 0 20px;
-        text-transform: uppercase;
         color: #999999;
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
@@ -562,28 +561,55 @@ body {
     background-color: bisque;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 30px 10px;
+    padding: 15px 10px;
     position: absolute;
     min-width: 150px;
-    right: 6%;
-    top: 8%;
-  
+    right: 0%;
+    top: 105%;
+    border-radius: 8px;
 
     a {
         padding: 10px;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+        font-weight: 700;
     }
 }
 
 .hamb-icon {
     font-size: 21px;
-    position: fixed;
-    top: 6%;
-    left: 91%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #009999;
+
+    i {
+        color: #fff;
+    }
+}
+
+.hamb_float {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    animation: float_in 1s;
 }
 
 
+@keyframes float_in {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 20px;
+    }
+}
 
 
 

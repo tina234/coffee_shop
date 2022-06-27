@@ -2,11 +2,11 @@ export default {
     state: {
         categories: [
             {
-                title:"Home",
+                title:"HOME",
                 link:"/"
             },
             {
-                title:"Create your plan",
+                title:"CREATE YOUR PLAN",
                 link:"/create_your_plan",
             }
         ],

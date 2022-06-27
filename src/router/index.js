@@ -24,4 +24,9 @@ const router = new VueRouter({
   routes
 })
 
+router.beforeEach((to, from, next) => {
+  window.scrollTo(0, 0); // na promjenu stranice vrati nazad na vrh stranice
+  next(); //next da se prebaci na iducu rutu(stranicu)
+})
+
 export default router

@@ -1,13 +1,13 @@
 <template>
     <div>
-        <div class="hamb-icon">
+        <div class="hamb-icon" :class="{ hamb_float: float_meni }" @click="toggleSidebar">
             <i class="fa fa-solid fa-bars"></i>
-        </div>
-        <transition>
-            <div class="sidebar">
-                <router-link class="nav-item" v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link>
-            </div>
-        </transition>
+             <transition>
+                <div class="sidebar" v-show="sidebar">
+                    <router-link class="nav-item" v-for="category in categories" :key="category.title" :to="category.link">{{ category.title }}</router-link>
+                </div>
+            </transition>
+        </div>  
     </div>
 </template>
 
@@ -16,12 +16,25 @@ export default {
     data() {
         return {
             categories : "",
+            sidebar: false,
+            float_meni: false,
         }
     },
 
-     created() {
+    created() {
         this.categories = this.$store.state.categories_modul.categories;
-        console.log(this.categories);
+        window.addEventListener("scroll", this.floatMeni);
+    },
+
+    methods: {
+        toggleSidebar() {
+            this.sidebar = !this.sidebar;
+        },
+
+        floatMeni() {
+            this.float_meni = window.pageYOffset > 150 ? true : false;
+            console.log(this.float_meni);
+        }
     }
 }
 </script>
